@@ -1,20 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid>
+    <ion-row >
+      <ion-col size="12">
+        <div class="rent-room-container">
+          <ion-card _ngcontent-agu-c1="" class="ion-text-center md hydrated" (click)="RedirectToSearchPage()">
+            <ion-icon _ngcontent-agu-c1="" src="assets/img/rent-key.svg"  role="img" class="md hydrated">
+            </ion-icon>
+            <ion-card-header _ngcontent-agu-c1="" class="ion-inherit-color md hydrated">
+              <ion-card-title _ngcontent-agu-c1="" role="heading" aria-level="2" class="ion-inherit-color md hydrated">Rent a Room</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -1,0 +1,120 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" mode="ios" text="Back"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Add Filters</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="leasign-segment">
+
+    <!-- Payment Details  -->
+    <div class="leasing-details-wrapper">
+      <div class="details-inner">
+        <div class="personal-information-wrapper">
+
+         
+
+          <div class="form">
+
+            <div class="range-wrapper">
+              <h3>Select Price Range</h3>
+              <ion-range min="100" max="5000"  pin="true">
+              </ion-range>
+              <div class="range-title">
+                <div class="left">
+                  <h5>R100</h5>
+                </div>
+                <div class="right">
+                  <h5>R5000</h5>
+                </div>
+              </div>
+            </div>
+            
+            
+           
+            
+            <div class="input-item myselect-container">
+              <ion-label>Architecture Type</ion-label>
+              <ion-select multiple="false" placeholder="Select One">
+                <ion-select-option value="national">All</ion-select-option>
+                <ion-select-option value="Standard">Standard</ion-select-option>
+                <ion-select-option value="Bachelor">Bachelor</ion-select-option>
+                <ion-select-option value="Cotage">Cotage</ion-select-option>
+              </ion-select>
+              <ion-icon name="chevron-down-outline" class="down-icon" slot="end"></ion-icon>
+            </div>
+
+            <div class="input-item myselect-container">
+              <ion-label>Floor Level</ion-label>
+              <ion-select multiple="false" placeholder="Select One">
+                <ion-select-option value="national">All</ion-select-option>
+                <ion-select-option value="national2">First</ion-select-option>
+              </ion-select>
+              <ion-icon name="chevron-down-outline" class="down-icon" slot="end"></ion-icon>
+            </div>
+
+            <div class="input-item myselect-container">
+              <ion-label>Category</ion-label>
+              <ion-select multiple="false" placeholder="Select One">
+                <ion-select-option value="All">All</ion-select-option>
+                <ion-select-option value="Brand_new">Brand New</ion-select-option>
+                <ion-select-option value="Construction">Construction</ion-select-option>
+              </ion-select>
+              <ion-icon name="chevron-down-outline" class="down-icon" slot="end"></ion-icon>
+            </div>
+
+
+            <div class="input-item myselect-container">
+              <ion-label>Unit Type</ion-label>
+              <ion-select multiple="false" placeholder="Select One">
+                <ion-select-option value="All">All</ion-select-option>
+                <ion-select-option value="Pasella">Pasella Unit</ion-select-option>
+                <ion-select-option value="Other">Other</ion-select-option>
+              </ion-select>
+              <ion-icon name="chevron-down-outline" class="down-icon" slot="end"></ion-icon>
+            </div>
+
+
+            <div class="input-item myselect-container">
+              <ion-label>Sort Type</ion-label>
+              <ion-select multiple="false" placeholder="Select One">
+                <ion-select-option value="Featured">Featured</ion-select-option>
+                <ion-select-option value="Price">Price</ion-select-option>
+                <ion-select-option value="Architecture_type">Architecture Type</ion-select-option>
+                <ion-select-option value="Owner">Owner</ion-select-option>
+              </ion-select>
+              <ion-icon name="chevron-down-outline" class="down-icon" slot="end"></ion-icon>
+            </div>
+
+
+            <div class="input-item myselect-container">
+              <ion-label>Sort Order</ion-label>
+              <ion-select multiple="false" placeholder="Select One">
+                <ion-select-option value="national">Default</ion-select-option>
+                <ion-select-option value="low">Low to High</ion-select-option>
+                <ion-select-option value="high">High to Low</ion-select-option>
+              </ion-select>
+              <ion-icon name="chevron-down-outline" class="down-icon" slot="end"></ion-icon>
+            </div>
+            <div class="btn-holder">
+              <ion-button class="filter-btn">
+                Apply Filters
+              </ion-button>
+              <ion-button class="clear-btn">
+                Clear Filters
+              </ion-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Payment Details  -->
+  </div>
+
+
+
+</ion-content>
+

@@ -1,0 +1,108 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" mode="ios" text="Back"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Rent a Room: Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="leasign-segment">
+    <div class="search-top-holder">
+      <div class="searchbar-container">
+        <ion-toolbar>
+          <ion-searchbar></ion-searchbar>
+        </ion-toolbar>
+      </div>
+      <div class="search-filter-container">
+        <div class="search-filter-left">
+          <div class="search-count">
+            <h3><span>2</span>Filters</h3>
+          </div>
+          <div class="filter-name">
+            <h3>Sort by  <span>Featured</span></h3>
+          </div>
+        </div>
+        <div class="search-filter-right">
+          <ion-button class="clear-btn">
+            Clear Filters
+          </ion-button>
+        </div>
+      </div>
+      <div class="filter-button-container">
+          <ion-button class="filter-btn" (click)="RedirectToAddfiltersPage()">
+            <ion-icon name="funnel-outline"></ion-icon>
+          </ion-button>
+      </div>
+    </div>
+
+    <!-- Search  -->
+    <div class="leasing-details-wrapper">
+      <div class="details-inner">
+
+        <div class="search-result-container">
+          <div class="search-result-inner" routerLink="/search/description">
+            <img src="../../assets/img/the-youth-hostel-meghalaya-sectt-shillong-hostels-27itvwbw5d.png" alt="">
+            <div class="price">
+              <h5>R1200</h5>
+            </div>
+            <div class="type">
+              <h6>Standard Unit No 13(First Floor)</h6>
+            </div>
+            <div class="address">
+              <p>Kalfontein, Tambisa Phindielie Nkosi</p>
+            </div>
+            <div class="rating">
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="popover-btn-container">
+            <ion-button slot="end" fill="clear" (click)="popclick($event)">
+               
+              <ion-icon name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+        </div>
+      </div>
+    </div>
+    <!-- Search  -->
+
+
+    <div class="bottom-menu-wrapper">
+      <div class="mybutton-wrapper">
+       <ion-button  class="first-btn bottom-active">
+         <ion-icon slot="start" name="search-sharp"></ion-icon>
+        Search
+       </ion-button>
+      </div>
+      <div class="mybutton-wrapper">
+       <ion-button (click)="RedirectToRentingPage()">
+         <ion-icon slot="start" name="key-outline" class="rotate"></ion-icon>
+        Renting
+       </ion-button>
+      </div>
+      <div class="mybutton-wrapper">
+       <ion-button >
+         <ion-icon slot="start" name="chatbox-outline"></ion-icon>
+        Messages
+       </ion-button>
+      </div>
+      <div class="mybutton-wrapper">
+       <ion-button class="last-btn" (click)="RedirectToProfilePage()">
+         <ion-icon slot="start" name="person"></ion-icon>
+        Profile
+       </ion-button>
+      </div>
+     </div>
+
+  </div>
+
+
+
+</ion-content>

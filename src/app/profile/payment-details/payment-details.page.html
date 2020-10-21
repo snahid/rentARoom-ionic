@@ -1,0 +1,73 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" mode="ios" text="Back"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Payment Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="leasign-segment">
+
+    <!-- Payment Details  -->
+    <div class="leasing-details-wrapper">
+      <div class="details-inner">
+        <div class="personal-information-wrapper">
+
+          <div class="receive-payments">
+            <h5>Receive Payments</h5>
+            <p>This is required if you are a land owner with listed rentals. This information will be used to pay out rent collected or any other 
+              amounts due to your account.</p>
+          </div>
+
+          <div class="form">
+           
+            <div class="input-item myselect-container">
+              <ion-label>Bank</ion-label>
+              <ion-select multiple="false" placeholder="Select Bank">
+                <ion-select-option value="national">RSA Bank</ion-select-option>
+                <ion-select-option value="national2">RSA Bank</ion-select-option>
+              </ion-select>
+              <ion-icon name="chevron-down-outline" class="down-icon" slot="end"></ion-icon>
+            </div>
+
+            <div class="input-item">
+              <ion-item>
+                <ion-label position="floating">Branch Code</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+            </div>
+
+            <div class="input-item myselect-container">
+              <ion-label>Account Type</ion-label>
+              <ion-select multiple="false" placeholder="Select Type">
+                <ion-select-option value="national">Savings</ion-select-option>
+                <ion-select-option value="national2">Current</ion-select-option>
+              </ion-select>
+              <ion-icon name="chevron-down-outline" class="down-icon" slot="end"></ion-icon>
+            </div>
+
+            <div class="input-item">
+              <ion-item>
+                <ion-label position="floating">Account Number</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+            </div>
+           
+            <div class="btn-holder">
+              <ion-button>
+                Save
+              </ion-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Payment Details  -->
+  </div>
+
+
+
+</ion-content>
+

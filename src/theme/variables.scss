@@ -76,6 +76,26 @@
   --ion-color-light-tint: #f5f6f9;
 }
 
+@font-face{
+  font-family: "Mregular";
+  font-weight: 400;
+  src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+  font-family: "Mlight";
+  font-weight: 300;
+  src: url(../assets/fonts/Montserrat-Light.ttf);
+}
+
+@font-face{
+  font-family: "Mmedium";
+  font-weight: 500;
+  src: url(../assets/fonts/Montserrat-Medium.ttf);
+}
+
+
+
+
 @media (prefers-color-scheme: dark) {
   /*
    * Dark Colors

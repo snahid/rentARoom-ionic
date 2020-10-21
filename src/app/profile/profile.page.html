@@ -1,0 +1,89 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" mode="ios" text="Back"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="leasign-segment">
+
+    <!-- Profile  -->
+    <div class="leasing-details-wrapper">
+      <div class="details-inner">
+        <div class="profile-top ion-padding">
+          <div class="profile-left">
+            <div class="image">
+              <img src="../../assets/img/Ellipse 14.png" alt="">
+            </div>
+            <div class="name-phone">
+              <h5 class="name">Spencer Davis</h5>
+              <p class="phone">+27 1254 1401 20</p>
+            </div>
+          </div>
+          <div class="popover-btn-container">
+            <ion-button slot="end" fill="clear" (click)="popclick($event)">
+              <ion-icon name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+        </div>
+        </div>
+        <div class="profile-bottom">
+          <div class="my-item">
+            <ion-item lines="none"  detail routerLink="/profile/personal-information">           
+              <ion-label>Personal Information</ion-label>
+            </ion-item>
+          </div>
+         <div class="my-item">
+          <ion-item lines="none"  detail routerLink="/profile/payment-details">
+            <ion-label>Payment Details</ion-label>
+          </ion-item>
+         </div>
+          <div class="my-item">
+            <ion-item lines="none" detail>
+              <ion-label>MY Listings</ion-label>
+            </ion-item>
+          </div>
+        </div>
+        <div class="sign-out-btn-container">
+          <span>Sign Out</span>
+        </div>
+      </div>
+    </div>
+    <!-- Profile  -->
+
+
+    <div class="bottom-menu-wrapper">
+      <div class="mybutton-wrapper">
+       <ion-button  class="first-btn" (click)="RedirectToSearchPage()">
+         <ion-icon slot="start" name="search-sharp"></ion-icon>
+        Search
+       </ion-button>
+      </div>
+      <div class="mybutton-wrapper">
+       <ion-button (click)="RedirectToRentingPage()">
+         <ion-icon slot="start" name="key-outline" class="rotate"></ion-icon>
+        Renting
+       </ion-button>
+      </div>
+      <div class="mybutton-wrapper">
+       <ion-button>
+         <ion-icon slot="start" name="chatbox-outline"></ion-icon>
+        Messages
+       </ion-button>
+      </div>
+      <div class="mybutton-wrapper">
+       <ion-button class="last-btn bottom-active">
+         <ion-icon slot="start" name="person"></ion-icon>
+        Profile
+       </ion-button>
+      </div>
+     </div>
+
+  </div>
+
+
+
+</ion-content>

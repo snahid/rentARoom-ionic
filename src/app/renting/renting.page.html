@@ -1,0 +1,124 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" mode="ios" text="Back"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Rent a Room: Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="leasign-segment">
+    <div class="segment-holder">
+        <div class="segment-btn-container">
+          <ion-segment [value]="categories" (ionChange)="segmentChanged($event)">
+            <ion-segment-button value="leasing" class="margin">
+              <ion-label>Leasing</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="offers" class="margin">
+              <ion-label>Offers</ion-label>
+            </ion-segment-button>
+            <ion-segment-button  class="margin">
+              <ion-label>Payment</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+        </div>
+       
+        <div class="searchbar-container margin">
+          <ion-toolbar>
+            <ion-searchbar></ion-searchbar>
+          </ion-toolbar>
+        </div>
+        <div class="filter-button-container">
+          <ion-button class="filter-btn" (click)="RedirectToAddfiltersPage()">
+            <ion-icon name="funnel-outline"></ion-icon>
+          </ion-button>
+      </div>
+    </div>
+    <div class="mobile-segment">
+      <div class="segment-btn-container">
+        <ion-segment [value]="categories" (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="leasing" class="margin">
+            <ion-label>Leasing</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="offers" class="margin">
+            <ion-label>Offers</ion-label>
+          </ion-segment-button>
+          <ion-segment-button  class="margin">
+            <ion-label>Payment</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+     
+    </div>
+
+    <!-- Leasing  -->
+    <div class="leasing-details-wrapper" *ngIf="categories == 'leasing'">
+      <div class="details-inner">
+        <div class="popover-btn-container">
+            <ion-button slot="end" fill="clear" (click)="popclick($event)">
+              <ion-icon name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+        </div>
+        <div class="find-place-and-noleasing">
+          <h3>You don't have any leases at the moment</h3>
+          <ion-button>
+            Find a Place to stay
+          </ion-button>
+        </div>
+      </div>
+    </div>
+    <!-- Leasing  -->
+
+    <!-- Offers  -->
+    <div class="leasing-details-wrapper" *ngIf="categories == 'offers'">
+      <div class="details-inner">
+        <div class="popover-btn-container">
+            <ion-button slot="end" fill="clear">
+              <ion-icon name="ellipsis-vertical"></ion-icon>
+            </ion-button>
+        </div>
+        <div class="find-place-and-noleasing">
+          <h3>You don't have any offer at the moment</h3>
+          <ion-button>
+            Make an offer
+          </ion-button>
+        </div>
+      </div>
+    </div>
+    <!-- Offers  -->
+
+
+    <div class="bottom-menu-wrapper">
+      <div class="mybutton-wrapper">
+       <ion-button  class="first-btn" (click)="RedirectToSearchPage()">
+         <ion-icon slot="start" name="search-sharp"></ion-icon>
+        Search
+       </ion-button>
+      </div>
+      <div class="mybutton-wrapper">
+       <ion-button class="bottom-active">
+         <ion-icon slot="start" name="key-outline" class="rotate"></ion-icon>
+        Renting
+       </ion-button>
+      </div>
+      <div class="mybutton-wrapper">
+       <ion-button>
+         <ion-icon slot="start" name="chatbox-outline"></ion-icon>
+        Messages
+       </ion-button>
+      </div>
+      <div class="mybutton-wrapper">
+       <ion-button class="last-btn" (click)="RedirectToProfilePage()">
+         <ion-icon slot="start" name="person"></ion-icon>
+        Profile
+       </ion-button>
+      </div>
+     </div>
+
+  </div>
+
+
+
+</ion-content>
+
